@@ -1,0 +1,25 @@
+.converter {
+    text-align: center;
+    width: 600px;
+    margin: auto;
+    padding: calc((100vh - 103px) / 2) calc((100vw - 600px) / 2);
+}
+
+.converterForm {
+    border: 1px solid lightgrey;
+    background-color: #222329;
+}
+
+.converterInput {
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 20px;
+}
+
+.converterBackground {
+    height: 30px;
+    border: 1px solid lightgrey;
+    font-size: 20px;
+    background-color: #222329;
+}
