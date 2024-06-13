@@ -1,4 +1,4 @@
-import './ColorConverter.css';
+import styles from './ColorConverter.module.css';
 
 import { ChangeEvent, useState } from 'react';
 import { ERROR, MAX_LENGTH, validateHexColor } from '../../helpers';
@@ -14,11 +14,11 @@ export function ColorConverter(): JSX.Element {
     }
 
     return <div
-        className="converter"
+        className={styles.converter}
         style={{ backgroundColor: validateHexColor(color) }}>
 
-        <form className="converterForm">
-            <input className="converterInput"
+        <form className={styles.converterForm}>
+            <input className={styles.converterInput}
                    name="hex"
                    type="text"
                    value={color}
@@ -28,7 +28,7 @@ export function ColorConverter(): JSX.Element {
         </form>
 
         <p
-            className="converterBackground"
+            className={styles.converterBackground}
             style={{ color: validateHexColor(color) !== ERROR ? '#ffffff' : '#ff0000' }}
         >
             {validateHexColor(color)}
